@@ -12,7 +12,8 @@
                 a% i == 0 ? sum += (i+a/i)  : sum += 0;
             }
             sum -= a;
-            sum < a ? std::cout << a << " DEFICIENT\n" : sum == a ? std::cout << a << " PERFECT\n" : std::cout << a << " ABUNDANT\n";            
+			std::cout << a;
+            std::cout << sum < a ? " DEFICIENT\n" : sum == a ? " PERFECT\n" : " ABUNDANT\n";         
         } while (a != 0);
         return 0;
     }
